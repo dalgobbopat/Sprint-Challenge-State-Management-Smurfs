@@ -3,7 +3,7 @@ export const FETCHING_DATA = 'FETCHING_DATA';
 export const FETCHING_COMPLETE = 'FETCHING_COMPLETE';
 export const FETCHING_FAIL = 'FETCHING_FAIL';
 
-export const fetchData = () => {
+export const fetchData = () => dispatch => {
     dispatch({ type: FETCHING_DATA});
 
     axios
